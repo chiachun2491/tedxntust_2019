@@ -1,0 +1,41 @@
+* {
+    background-color: #05121F;
+    color: #FFFFFF;
+}
+.main {
+    color: #F15457;
+}
+.sub {
+    color: #721176;
+}
+body {
+    background-color: #05121F !important;
+}
+nav, .bg-custom {
+    background: #F15457 !important;
+    background-color: #F15457;
+}
+.a-main {
+    background-color: #F15457;
+}
+.bg-main {
+    background-color: #F15457 !important;
+}
+hr {
+    border: #721176 1px solid;
+}
+.btn-main{
+    background-color: #F15457;
+    color: #FFFFFF;
+}
+
+.badge-main {
+    background-color: #F15457;
+    padding: 0.7rem;
+    margin-bottom: inherit;
+}
+.jumbotron-custom {
+    padding: 5rem 1rem 0rem 1rem;
+    margin: 1rem;
+    background-color: #05121F;
+}
