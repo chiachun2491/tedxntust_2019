@@ -5,6 +5,7 @@ $(document).ready(function () {
 
             $("#navbar").removeClass("show");
             var target = $(this.hash);
+            //            console.log(target);
             $("html, body").animate({
                 scrollTop: target.offset().top - 70
             }, "slow");
@@ -22,18 +23,24 @@ $(document).ready(function () {
     });
     $(window).scroll(function () {
 
-        if ($(window).scrollTop() < $("#timetable").height()) {
+        val = $(window).scrollTop() + 71;
+        //        console.log(val);
+
+        if (val > $("#crew").offset().top) {
             $(".nav-item").removeClass("active");
-            $("#nav-speaker").addClass("active");
-        } else if ($(window).scrollTop() >= $("#timetable").height() && $(window).scrollTop() < $("#transport").height()) {
-            $(".nav-item").removeClass("active");
-            $("#nav-timetable").addClass("active");
-        } else if ($(window).scrollTop() >= $("#transport").height() && $(window).scrollTop() < $("#sponsor").height()) {
-            $(".nav-item").removeClass("active");
-            $("#nav-transport").addClass("active");
-        } else if ($(window).scrollTop() >= $("#sponsor").height()) {
+            $("#nav-crew").addClass("active");
+        } else if (val > $("#sponsor").offset().top) {
             $(".nav-item").removeClass("active");
             $("#nav-sponsor").addClass("active");
+        } else if (val > $("#transport").offset().top) {
+            $(".nav-item").removeClass("active");
+            $("#nav-transport").addClass("active");
+        } else if (val > $("#timetable").offset().top) {
+            $(".nav-item").removeClass("active");
+            $("#nav-timetable").addClass("active");
+        } else {
+            $(".nav-item").removeClass("active");
+            $("#nav-speaker").addClass("active");
         }
 
     })
