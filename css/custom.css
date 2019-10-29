@@ -1,4 +1,4 @@
-* {
+body {
     background-color: #05121F;
     color: #FFFFFF;
 }
@@ -38,4 +38,14 @@ hr {
     padding: 5rem 1rem 0rem 1rem;
     margin: 1rem;
     background-color: #05121F;
+}
+.card-custom {
+    background: transparent;
+    border: rgba(255,255,255,0.5) 0.5px solid;
+}
+.background-custom {
+    background-color: #05121F;
+}
+.close-custom {
+    color: #FFFFFF !important;
 }
