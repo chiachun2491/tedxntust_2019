@@ -15,6 +15,11 @@ body {
     background-color: #05121F !important;
 }
 
+p {
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
 nav,
 .bg-custom {
     background: #F15457 !important;
@@ -61,4 +66,39 @@ hr {
 
 .close-custom {
     color: #FFFFFF !important;
+}
+
+.figure-crew img {
+    border-radius: 50%;
+    max-width: 5rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.figure-crew figcaption {
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/*custom animate*/
+.animated.delay-02s {
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+
+.animated.delay-05s {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.animated.delay-07s {
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
 }
