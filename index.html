@@ -95,7 +95,7 @@
                                     進而造成社會分裂、仇視。<br>
                                     停下腳步，唯有對彼此的理解與珍惜，<br>
                                     才能找回那不可或缺的心，讓愛完整。</p>
-                                <a class="btn btn-danger btn-main btn-lg" href="https://www.tedxntust.com/links/2019ticket/"  target="_blank" role="button">立即購票 &raquo;</a>
+                                <a class="btn btn-danger btn-main btn-lg" href="https://www.tedxntust.com/links/2019ticket/" target="_blank" role="button">立即購票 &raquo;</a>
                             </div>
                         </div>
                     </div>
@@ -502,6 +502,7 @@
             </div>
 
         </section>
+
     </main>
 
     <footer class="container">
@@ -515,6 +516,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="347462198745355" theme_color="#f15457" logged_in_greeting="你好，有什麼可以幫你的嗎？" logged_out_greeting="你好，有什麼可以幫你的嗎？">
+    </div>
 </body>
 
 </html>
